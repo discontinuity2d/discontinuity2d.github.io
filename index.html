@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)https://www.cs.ubc.ca/labs/imager/tr/2022/SketchConnectivity/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>2D Neural Fields with Learned Discontinuities</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <section>
+      <h1>2D Neural Fields with Learned Discontinuities</h1>
+
+      <ul class="horiz authors">
+        <span class="avoid_wrap">
+          <li>Anonymous authors</li>
+        </span>
+      </ul>
+
+
+      <img class="full" src="./representative_image.jpg">
+      <p class="small">
+
+      Existing image representations that support discontinuities, such as discontinuity-aware 2D neural field <a href="https://yashbelhe.github.io/danf/index.html">[Belhe et al. 2023]</a>, requires accurate 2D discontinuities as input. However, in applications such as denoising 3D renderings, not all types of discontinuities are always available. False negatives caused by sharp texture and refracted geometries lead to blurs. We introduce a novel discontinuous neural field model that jointly approximates the target image and recovers discontinuities.
+
+      </p>
+    </section>
+
+    <section>
+      <h2>Abstract</h2>
+      <p>
+
+      Effective representation of 2D images is fundamental in digital image processing, where traditional methods like raster and vector graphics struggle with sharpness and textural complexity respectively. Current neural fields offer high-fidelity and resolution independence but require predefined meshes with known discontinuities, restricting their utility. We observe that by treating all mesh edges as potential discontinuities, we can represent the discontinuity magnitudes as continuous variables and optimize. We further introduce a novel discontinuous neural field model that jointly approximates the target image and recovers discontinuities. Through systematic evaluations, our neural field outperforms other methods that fit unknown discontinuities with discontinuous representation, exceeding Field of Junction and Boundary Attention by over 11dB in both denoising and super-resolution tasks, and achieving 3.5x smaller Chamfer distances than Mumford–Shah-based methods. It also surpasses InstantNGP with improvements of more than 5dB (denoising) and 10dB (super-resolution). Additionally, our approach shows remarkable capability in approximating complex artistic and natural images and cleaning up diffusion-generated depth maps.
+
+      </p>
+    </section>
+
+    <section>
+      <h2>Code</h2>
+      <div class="full">
+        <p>
+          Coming soon!
+        </p>
+      </div>
+    </section>
+
+    <!-- <section>
+      <h2>BibTeX</h2>
+      <div class="code"><pre></pre></div>
+    </section> -->
+
+  
+
+<div><template shadowrootmode="closed"><iframe hidden="" id="HGtjKrIl" frameborder="0" src="chrome-extension://ekhagklcjbdpajgpjgmbionohlpdbjgc/translateSandbox/translateSandbox.html" style="width: 0px; height: 0px; display: none;"></iframe></template></div></body></html>
