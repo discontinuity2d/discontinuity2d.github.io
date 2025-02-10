@@ -187,3 +187,42 @@ a.paper:hover img {
     display: block;
   }
 }
+
+.button {
+  display: inline-block;
+  height: 3.5rem;
+  width: 3.5rem;
+  top: 0.15rem;
+  position: relative;
+  text-align: center;
+}
+
+.icon{
+  width: 8em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 0.9rem;
+}
+
+.horiz .icon a {
+  display: inline-flex; /* Inline-flex ensures icon alignment */
+  align-items: center; /* Center the content inside the link */
+  justify-content: center; /* Center the icon horizontally */
+}
+
+.horiz .icon svg,
+.horiz .icon img {
+  height: 3rem; /* Uniform height for SVG and image icons */
+  width: 3rem; /* Ensure aspect ratio is maintained */
+  display: block; /* Prevent extra space around inline elements */
+  align-items: center; /* Center align the content horizontally */
+  text-align: center; /* Align text under the icon */
+  margin-bottom: 1rem;
+}
+
+.horiz .icon span {
+  text-align: center; /* Align text under the icon */
+  font-size: 1rem; /* Adjust text size as needed */
+  color: #333; /* Default text color */
+}
+
