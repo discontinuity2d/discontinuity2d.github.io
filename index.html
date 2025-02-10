@@ -13,8 +13,19 @@
 
       <ul class="horiz authors">
         <span class="avoid_wrap">
-          <li>Anonymous authors</li>
+          <li>Chenxi Liu<sup>1</sup></li>
+          <li>Siqi Wang<sup>2</sup></li>
+          <li>Matthew Fisher<sup>3</sup></li>
         </span>
+        <span class="avoid_wrap">
+          <li>Deepali Aneja<sup>3</sup></li>
+          <li>Alec Jacobson<sup>1,3</sup></li>
+        </span>
+      </ul>
+      <ul class="horiz institutions">
+        <li><sup>1</sup> University of Toronto</li>
+        <li><sup>2</sup> New York University, Courant Institute of Mathematical Sciences</li>
+        <li><sup>3</sup> Adobe Research, San Francisco</li>
       </ul>
 
 
@@ -22,8 +33,42 @@
       <p class="small">
 
       Existing image representations that support discontinuities, such as discontinuity-aware 2D neural field <a href="https://yashbelhe.github.io/danf/index.html">[Belhe et al. 2023]</a>, requires accurate 2D discontinuities as input. However, in applications such as denoising 3D renderings, not all types of discontinuities are always available. False negatives caused by sharp texture and refracted geometries lead to blurs. We introduce a novel discontinuous neural field model that jointly approximates the target image and recovers discontinuities.
-
       </p>
+
+      <ul class="horiz">
+        <span class="avoid_wrap">
+          <li>
+            <div class="icon">
+              <a href="./2D_Neural_Fields_with_Learned_Discontinuities_CamReady.pdf" class="button">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 448 512" style="enable-background:new 0 0 448 512;" xml:space="preserve">
+                <path fill="#e95c2a" d="M0.1,139.8v37.3c0,13.8,11.1,24.9,24.9,24.9h12.4h37.3v-62.2c0-20.6-16.7-37.3-37.3-37.3S0.1,119.2,0.1,139.8z M87.2,102.5
+                  c7.8,10.4,12.4,23.3,12.4,37.3v236.4c0,27.5,22.3,49.8,49.8,49.8s49.8-22.3,49.8-49.8v-4.1c0-25.2,20.5-45.7,45.7-45.7h128.6V177.1
+                  c0-41.2-33.4-74.7-74.7-74.7H87.2z M360.9,450.9c48.1,0,87.1-39,87.1-87.1c0-6.8-5.6-12.4-12.4-12.4H244.8
+                  c-11.4,0-20.8,9.3-20.8,20.8v4.1c0,41.2-33.4,74.7-74.7,74.7h136.9H360.9z"></path>
+                </svg>
+              </a><br>
+              Paper (219.1 MB)
+            </div>
+          </li>
+          <li>
+            <div class="icon">
+              <a href="https://arxiv.org/abs/2408.00771" class="button">
+                <img src="./arxiv-logomark-small.svg">
+              </a><br>
+              ArXiv
+            </div>
+          </li>
+          <li>
+            <div class="icon">
+              <a href="#" class="button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path fill="#e95c2a" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+              </a><br>
+              Coming soon
+            </div>
+          </li>
+        </span>
+      </ul>
+
     </section>
 
     <section>
@@ -35,20 +80,9 @@
       </p>
     </section>
 
-    <section>
-      <h2>Code</h2>
-      <div class="full">
-        <p>
-          Coming soon!
-        </p>
-      </div>
-    </section>
-
     <!-- <section>
       <h2>BibTeX</h2>
       <div class="code"><pre></pre></div>
     </section> -->
 
-  
-
-<div><template shadowrootmode="closed"><iframe hidden="" id="HGtjKrIl" frameborder="0" src="chrome-extension://ekhagklcjbdpajgpjgmbionohlpdbjgc/translateSandbox/translateSandbox.html" style="width: 0px; height: 0px; display: none;"></iframe></template></div></body></html>
+</body></html>
